@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/favicon-32x32.png">
+    <link rel="stylesheet" href="../estilos/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="contacto">  
+    <header class="portada">
+        <div class="logo nombre">
+          <img src="../imagenes/Logo-conectados.jpg" alt="logo conectados" class="LogoPortada">
+          <h1>Conectados</h1>  
+        </div>
+        <div class="subtitulo">
+          <h4>Tecnologias de asistencia para personas con discapacidad</h4>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./quienessomos.html">Quienes somos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./serviciosevaluaciones.html">Evaluaciones</a></li>
+                        <li><a class="dropdown-item" href="./serviciosentrenamiento.html">Entrenamiento</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+    </nav>
+    <main class="main-contacto">
+        <h3 class="contacto-title">¿Tenés alguna consulta?</h3>
+         <form class="formulario" action="">
+          <h4 class="formulario-title">Escribinos..</h4>
+            <div class="formulario-contenido">
+              <div>
+                <label for="Nombre y apellido">Nombre y apellido:*</label>
+                <input type="text" name="Nombre y apellido" required>
+              </div>
+              <div>
+                <label for="Email">Email:*</label>
+                <input type="email" name="Email" required>
+              </div>
+              <div>
+                <label for="Teléfono">Teléfono:</label>
+                <select name="Prefijos telefonicos" id="">
+                    <option value="Argentina">AR +54</option>
+                    <option value="Brasil">BRA +55</option>
+                    <option value="Chile">CHI +56</option>
+                    <option value="Uruguay">URU +598</option>
+                </select>
+                <input type="text" name="Numero de telefono">
+              </div>
+              <div>
+                <label for="Consulta">Consulta:*</label>
+                <textarea name="Consulta" id="" cols="30" rows="10" required></textarea>
+              </div>
+              <div>
+                <input type="submit" value="Enviar consulta">
+                <input type="reset" value="Borrar Formulario"> 
+              </div>
+            </div>
+         </form>  
+    </main>
+    <div class="aside-contacto">
+      <div class="card-contacto">
+        <h5 class="card-title">O visitanos en..</h5>
+        <div class="mapa" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+          <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+              var setting = {"height":250,"width":250,"zoom":17,"queryString":"Avenida Crámer 2763, Buenos Aires, Argentina","place_id":"ChIJKSYDBoG2vJURXlEyJWxO2JI","satellite":false,"centerCoord":[-34.55886291093825,-58.46622869999999],"cid":"0x92d84e6c2532515e","lang":"es","cityUrl":"/argentina/buenos-aires","cityAnchorText":"Mapa de Ciudad Autónoma de Buenos Aires, Provincia de Buenos Aires, Argentina","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"930945"};
+              var d = document;
+              var s = d.createElement('script');
+              s.src = 'https://1map.com/js/script-for-user.js?embed_id=930945';
+              s.async = true;
+              s.onload = function (e) {
+                window.OneMap.initMap(setting)
+              };
+              var to = d.getElementsByTagName('script')[0];
+              to.parentNode.insertBefore(s, to);
+            })();</script><a href="https://1map.com/es/map-embed">1 Map</a></div>
+        <div class="card-body">
+          <p class="card-text">Cramer 2763, Belgrano.</p>
+          <p class="card-text">¿Cómo llegar?</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Colectivo: 41-60-68-161</li>
+          <li class="list-group-item">Subte: linea D</li>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer">
+        <p class="textofooter">Seguinos en</p>
+        <div class="redessociales">
+          <a href="https://www.facebook.com" target="_blank"><img src="../imagenes/facebook-logo.jpg" alt="facebook-logo"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="../imagenes/instagram-logo.jpg" alt="instagram-logo"></a>
+        </div>
+    </footer>
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
