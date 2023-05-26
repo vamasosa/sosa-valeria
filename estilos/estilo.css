@@ -154,7 +154,7 @@ footer .redessociales img{
 }
 .contacto{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 0.8fr;
     grid-template-rows: .4fr .1fr 2fr .2fr;
     gap: 10px 10px;
     grid-auto-flow: row;
@@ -164,6 +164,7 @@ footer .redessociales img{
       "main aside"
       "footer footer";
     color: black;
+    width: 90% auto;
 }
 .main-contacto{
     grid-area: main;
@@ -173,7 +174,9 @@ footer .redessociales img{
     line-height: 2;
 }
 .contacto-title{
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
 }
 .formulario-title{
     margin: 20px; 
@@ -263,12 +266,5 @@ ul .list-group{
           "main" 
           "aside"
           "footer";
-    }
-    .formulario{
-        margin: 0 auto;
-    }
-    .aside-contacto{
-        margin: 0 auto;
-        padding: 0 auto;
     }
 }
