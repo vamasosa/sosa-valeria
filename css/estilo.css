@@ -7,7 +7,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(90deg, #ff7a73 0%, rgba(238, 203, 175, 0.600053) 28%);
   background-repeat: no-repeat;
-  color: black; }
+  color: #302e2e; }
 
 .container {
   display: grid;
@@ -23,16 +23,19 @@ body {
     width: 100%;
     border-radius: 20px;
     font-family: 'Fjalla One', sans-serif; }
-    .container .portada .logonombre h1 {
-      margin-left: 50px;
-      margin-top: 50px;
-      padding-top: 20px;
-      text-align: left; }
-    .container .portada .logonombre .imagenlogo {
-      margin: 10px;
-      float: left;
-      border-radius: 50px;
-      width: 50px; }
+    .container .portada .logonombre {
+      display: flex; }
+      .container .portada .logonombre .sticker {
+        margin: 10px;
+        float: left;
+        border-radius: 10px;
+        width: 120px;
+        height: 120px; }
+      .container .portada .logonombre h1 {
+        margin-left: 50px;
+        margin-top: 50px;
+        padding-top: 20px;
+        text-align: left; }
     .container .portada .subtitulo h4 {
       text-align: right;
       margin: 30px; }
@@ -45,22 +48,25 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: right;
-    border-radius: 20px; }
-    .container nav ul .navbar-nav li .navbar-item .nav-link {
+    border-radius: 20px;
+    font-weight: 600; }
+    .container nav .navbar-nav li .navbar-item a .nav-link {
       color: #302e2e;
       font-weight: bold; }
-      .container nav ul .navbar-nav li .navbar-item .nav-link:hover {
-        background-color: #f4f2f2d8;
+      .container nav .navbar-nav li .navbar-item a .nav-link:hover {
+        background-color: #d0c7c7a5;
         border-radius: 10px; }
-      .container nav ul .navbar-nav li .navbar-item .nav-link:active {
-        background-color: rgba(230, 205, 185, 0.415); }
-    .container nav ul .navbar-nav li .nav-itemdropdown ul .dropdown-menu {
+      .container nav .navbar-nav li .navbar-item a .nav-link:active {
+        background-color: #d110105c; }
+    .container nav .navbar-nav li .nav-itemdropdown ul .dropdown-menu {
       background-color: #fc97925f; }
-      .container nav ul .navbar-nav li .nav-itemdropdown ul .dropdown-menu .dropdown-item {
+      .container nav .navbar-nav li .nav-itemdropdown ul .dropdown-menu a .dropdown-item {
         color: #302e2e;
         font-weight: bold; }
-      .container nav ul .navbar-nav li .nav-itemdropdown ul .dropdown-menu:active {
-        background-color: rgba(230, 205, 185, 0.415); }
+      .container nav .navbar-nav li .nav-itemdropdown ul .dropdown-menu:hover {
+        background-color: #d0c7c7a5; }
+      .container nav .navbar-nav li .nav-itemdropdown ul .dropdown-menu:active {
+        background-color: #d110105c; }
   .container .carrusel {
     grid-area: carrusel;
     width: 800px;
@@ -74,13 +80,15 @@ body {
     grid-area: main;
     margin: auto;
     padding: auto;
-    line-height: 2; }
+    line-height: 2;
+    font-weight: 600; }
   .container .aside {
     grid-area: aside;
     background-color: none;
     width: 100%;
     margin: 0 auto;
-    margin-top: 30px; }
+    margin-top: 30px;
+    font-weight: 600; }
     .container .aside .lista-sitios {
       border-style: inset;
       border-color: #fc97925f;
@@ -91,12 +99,12 @@ body {
         margin: 10px; }
       .container .aside .lista-sitios .enlaces-sitios {
         list-style-type: circle; }
-        .container .aside .lista-sitios .enlaces-sitios:hover {
-          background-color: #d0c7c7a5;
-          border-radius: 10px; }
         .container .aside .lista-sitios .enlaces-sitios .sitios-item {
           text-decoration: none;
           color: #302e2e; }
+          .container .aside .lista-sitios .enlaces-sitios .sitios-item:hover {
+            background-color: #d0c7c7a5;
+            border-radius: 5px; }
   .container .footer {
     grid-area: footer;
     margin: 0 auto;
@@ -113,15 +121,16 @@ body {
       font-weight: bold;
       justify-items: start;
       margin-top: 20px; }
-    .container .footer .redessociales .icon {
-      width: 50px;
-      padding: 10px; }
+    .container .footer .redessociales a .icon {
+      padding: 10px;
+      margin-top: 10px; }
 
 .principal {
   margin-left: 40px;
   margin-top: 60px;
   padding: 2 rem;
-  line-height: 2; }
+  line-height: 2;
+  font-weight: 600; }
 
 .contacto {
   display: grid;
@@ -138,16 +147,19 @@ body {
     width: 100%;
     border-radius: 20px;
     font-family: 'Fjalla One', sans-serif; }
-    .contacto .portada .logonombre h1 {
-      margin-left: 50px;
-      margin-top: 50px;
-      padding-top: 20px;
-      text-align: left; }
-    .contacto .portada .logonombre .imagenlogo {
-      margin: 10px;
-      float: left;
-      border-radius: 50px;
-      width: 50px; }
+    .contacto .portada .logonombre {
+      display: flex; }
+      .contacto .portada .logonombre .sticker {
+        margin: 10px;
+        float: left;
+        border-radius: 10px;
+        width: 120px;
+        height: 120px; }
+      .contacto .portada .logonombre h1 {
+        margin-left: 50px;
+        margin-top: 50px;
+        padding-top: 20px;
+        text-align: left; }
     .contacto .portada .subtitulo h4 {
       text-align: right;
       margin: 30px; }
@@ -160,7 +172,8 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: right;
-    border-radius: 20px; }
+    border-radius: 20px;
+    font-weight: 600; }
     .contacto nav ul .navbar-nav li .navbar-item .nav-link {
       color: #302e2e;
       font-weight: bold; }
@@ -170,15 +183,16 @@ body {
         color: #302e2e;
         font-weight: bold; }
       .contacto nav ul .navbar-nav li .nav-itemdropdown ul .dropdown-menu:active {
-        background-color: rgba(230, 205, 185, 0.415); }
+        background-color: #d110105c; }
     .contacto nav ul .navbar-nav li .nav-itemdropdown:hover {
-      background-color: #f4f2f2d8;
+      background-color: #d0c7c7a5;
       border-radius: 10px; }
     .contacto nav ul .navbar-nav li .nav-itemdropdown:active {
-      background-color: rgba(230, 205, 185, 0.415); }
+      background-color: #d110105c; }
   .contacto .main-contacto {
     grid-area: main;
-    margin-top: 60px; }
+    margin-top: 60px;
+    font-weight: 600; }
     .contacto .main-contacto .contacto-title {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -195,7 +209,8 @@ body {
     grid-area: aside;
     background-color: none;
     justify-content: center;
-    width: auto; }
+    width: auto;
+    font-weight: 600; }
     .contacto .aside-contacto .card-contacto {
       background-color: none;
       border-style: inset;
