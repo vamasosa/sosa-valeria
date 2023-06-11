@@ -50,23 +50,30 @@ body {
     justify-content: right;
     border-radius: 20px;
     font-weight: 600; }
-    .container nav .navbar-nav li .navbar-item a .nav-link {
-      color: #302e2e;
-      font-weight: bold; }
-      .container nav .navbar-nav li .navbar-item a .nav-link:hover {
-        background-color: #d0c7c7a5;
-        border-radius: 10px; }
-      .container nav .navbar-nav li .navbar-item a .nav-link:active {
-        background-color: #d110105c; }
-    .container nav .navbar-nav li .nav-itemdropdown ul .dropdown-menu {
-      background-color: #fc97925f; }
-      .container nav .navbar-nav li .nav-itemdropdown ul .dropdown-menu a .dropdown-item {
+    .container nav .menu .ulmenu {
+      font-weight: 600; }
+      .container nav .menu .ulmenu .limenu .linkmenu {
         color: #302e2e;
-        font-weight: bold; }
-      .container nav .navbar-nav li .nav-itemdropdown ul .dropdown-menu:hover {
-        background-color: #d0c7c7a5; }
-      .container nav .navbar-nav li .nav-itemdropdown ul .dropdown-menu:active {
-        background-color: #d110105c; }
+        font-weight: 600; }
+        .container nav .menu .ulmenu .limenu .linkmenu:hover {
+          transform: scale(1.1);
+          background-color: #514848a5;
+          border-radius: 10px; }
+        .container nav .menu .ulmenu .limenu .linkmenu:active {
+          background-color: #d110105c; }
+      .container nav .menu .ulmenu .limenudrop .linkmenu:hover {
+        transform: scale(1.1);
+        background-color: #514848a5;
+        border-radius: 10px; }
+      .container nav .menu .ulmenu .limenudrop .ulmenudrop {
+        background-color: #fc97925f; }
+        .container nav .menu .ulmenu .limenudrop .ulmenudrop .linkmenudrop {
+          color: #302e2e;
+          font-weight: 600; }
+        .container nav .menu .ulmenu .limenudrop .ulmenudrop:hover {
+          background-color: #514848a5; }
+        .container nav .menu .ulmenu .limenudrop .ulmenudrop:active {
+          background-color: #d110105c; }
   .container .carrusel {
     grid-area: carrusel;
     width: 800px;
@@ -103,7 +110,7 @@ body {
           text-decoration: none;
           color: #302e2e; }
           .container .aside .lista-sitios .enlaces-sitios .sitios-item:hover {
-            background-color: #d0c7c7a5;
+            background-color: #514848a5;
             border-radius: 5px; }
   .container .footer {
     grid-area: footer;
@@ -121,9 +128,8 @@ body {
       font-weight: bold;
       justify-items: start;
       margin-top: 20px; }
-    .container .footer .redessociales a .icon {
-      padding: 10px;
-      margin-top: 10px; }
+    .container .footer .redessociales {
+      padding: 20px; }
 
 .principal {
   margin-left: 40px;
@@ -174,21 +180,30 @@ body {
     justify-content: right;
     border-radius: 20px;
     font-weight: 600; }
-    .contacto nav ul .navbar-nav li .navbar-item .nav-link {
-      color: #302e2e;
-      font-weight: bold; }
-    .contacto nav ul .navbar-nav li .nav-itemdropdown ul .dropdown-menu {
-      background-color: #fc97925f; }
-      .contacto nav ul .navbar-nav li .nav-itemdropdown ul .dropdown-menu .dropdown-item {
+    .contacto nav .menu .ulmenu {
+      font-weight: 600; }
+      .contacto nav .menu .ulmenu .limenu .linkmenu {
         color: #302e2e;
-        font-weight: bold; }
-      .contacto nav ul .navbar-nav li .nav-itemdropdown ul .dropdown-menu:active {
-        background-color: #d110105c; }
-    .contacto nav ul .navbar-nav li .nav-itemdropdown:hover {
-      background-color: #d0c7c7a5;
-      border-radius: 10px; }
-    .contacto nav ul .navbar-nav li .nav-itemdropdown:active {
-      background-color: #d110105c; }
+        font-weight: 600; }
+        .contacto nav .menu .ulmenu .limenu .linkmenu:hover {
+          transform: scale(1.1);
+          background-color: #514848a5;
+          border-radius: 10px; }
+        .contacto nav .menu .ulmenu .limenu .linkmenu:active {
+          background-color: #d110105c; }
+      .contacto nav .menu .ulmenu .limenudrop .linkmenu:hover {
+        transform: scale(1.1);
+        background-color: #514848a5;
+        border-radius: 10px; }
+      .contacto nav .menu .ulmenu .limenudrop .ulmenudrop {
+        background-color: #fc97925f; }
+        .contacto nav .menu .ulmenu .limenudrop .ulmenudrop .linkmenudrop {
+          color: #302e2e;
+          font-weight: 600; }
+        .contacto nav .menu .ulmenu .limenudrop .ulmenudrop:hover {
+          background-color: #514848a5; }
+        .contacto nav .menu .ulmenu .limenudrop .ulmenudrop:active {
+          background-color: #d110105c; }
   .contacto .main-contacto {
     grid-area: main;
     margin-top: 60px;
@@ -243,9 +258,8 @@ body {
       font-weight: bold;
       justify-items: start;
       margin-top: 20px; }
-    .contacto .footer .redessociales .icon {
-      width: 50px;
-      padding: 10px; }
+    .contacto .footer .redessociales {
+      padding: 20px; }
 
 @media (min-width: 320px) and (max-width: 1023px) {
   .container {

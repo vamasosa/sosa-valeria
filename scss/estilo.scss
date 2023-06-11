@@ -1,6 +1,6 @@
 $colorpartes:#fc97925f;
 $colortexto: rgb(48, 46, 46); 
-$colorhover:#d0c7c7a5;
+$colorhover:#514848a5;
 $coloractive:#d110105c;
 
 *{
@@ -67,32 +67,43 @@ body{
         justify-content: right;
         border-radius:20px;
         font-weight: 600;
-        .navbar-nav{
-            li .navbar-item{
-                a .nav-link{
-                    color: $colortexto;
-                    font-weight: bold;
-                    &:hover{
-                        background-color: $colorhover;
-                        border-radius: 10px;
-                    }
-                    &:active{
-                        background-color: $coloractive;
-                    }
-                }
-            }
-            li .nav-itemdropdown{
-                ul .dropdown-menu{
-                    background-color: $colorpartes;
-                    a .dropdown-item{
+        .menu{
+            .ulmenu{
+                font-weight: 600;
+                .limenu{
+                    .linkmenu{
                         color: $colortexto;
                         font-weight: 600;
+                        &:hover{
+                            transform: scale(1.1);
+                            background-color: $colorhover;
+                            border-radius: 10px;
+                        }
+                        &:active{
+                            background-color: $coloractive;
+                        }
                     }
-                    &:hover{
-                        background-color: $colorhover;
+                }
+                .limenudrop{
+                    .linkmenu{
+                        &:hover{
+                            transform: scale(1.1);
+                            background-color: $colorhover;
+                            border-radius: 10px;
+                        }
                     }
-                    &:active{
-                        background-color: $coloractive;
+                    .ulmenudrop{
+                        background-color: $colorpartes;
+                        .linkmenudrop{
+                            color: $colortexto;
+                            font-weight: 600;
+                        }
+                        &:hover{
+                            background-color: $colorhover;
+                        }
+                        &:active{
+                            background-color: $coloractive;
+                        }
                     }
                 }
             }
@@ -163,10 +174,7 @@ body{
             margin-top: 20px;
         }
         .redessociales{
-            a .icon{
-                padding: 10px;
-                margin-top: 10px;
-            }  
+            padding: 20px;
         }
     }
 }
@@ -230,31 +238,45 @@ body{
         justify-content: right;
         border-radius:20px;
         font-weight: 600;
-        ul .navbar-nav{
-            li .navbar-item{
-                .nav-link{
-                    color: $colortexto;
-                    font-weight: 600;
-                }
-            }
-            li .nav-itemdropdown{
-                ul .dropdown-menu{
-                    background-color: $colorpartes;
-                    .dropdown-item{
+        .menu{
+            .ulmenu{
+                font-weight: 600;
+                .limenu{
+                    .linkmenu{
                         color: $colortexto;
                         font-weight: 600;
-                    }
-                    &:active{
-                        background-color: $coloractive;
+                        &:hover{
+                            transform: scale(1.1);
+                            background-color: $colorhover;
+                            border-radius: 10px;
+                        }
+                        &:active{
+                            background-color: $coloractive;
+                        }
                     }
                 }
-            &:hover{
-                background-color: $colorhover;
-                border-radius: 10px;
-            }
-            &:active{
-                background-color: $coloractive;
-            }
+                .limenudrop{
+                    .linkmenu{
+                        &:hover{
+                            transform: scale(1.1);
+                            background-color: $colorhover;
+                            border-radius: 10px;
+                        }
+                    }
+                    .ulmenudrop{
+                        background-color: $colorpartes;
+                        .linkmenudrop{
+                            color: $colortexto;
+                            font-weight: 600;
+                        }
+                        &:hover{
+                            background-color: $colorhover;
+                        }
+                        &:active{
+                            background-color: $coloractive;
+                        }
+                    }
+                }
             }
         }
     }
@@ -326,10 +348,7 @@ body{
             margin-top: 20px;
         }
         .redessociales{
-            .icon{
-                width: 50px;
-                padding: 10px;
-            }  
+            padding: 20px; 
         }
     }
 }
@@ -390,3 +409,4 @@ body{
           "footer";
     }
 }
+
