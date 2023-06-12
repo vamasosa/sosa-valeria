@@ -86,6 +86,7 @@ body{
                 }
                 .limenudrop{
                     .linkmenu{
+                        font-weight: 600;
                         &:hover{
                             transform: scale(1.1);
                             background-color: $colorhover;
@@ -257,6 +258,7 @@ body{
                 }
                 .limenudrop{
                     .linkmenu{
+                        font-weight: 600;
                         &:hover{
                             transform: scale(1.1);
                             background-color: $colorhover;
@@ -299,6 +301,11 @@ body{
                 input{
                     margin: 5px;
                 }                
+            }
+            .botones{
+                .botonsubmit{
+                    font-size: 600;
+                }
             }
         }
     }
@@ -409,4 +416,3 @@ body{
           "footer";
     }
 }
-

@@ -61,10 +61,12 @@ body {
           border-radius: 10px; }
         .container nav .menu .ulmenu .limenu .linkmenu:active {
           background-color: #d110105c; }
-      .container nav .menu .ulmenu .limenudrop .linkmenu:hover {
-        transform: scale(1.1);
-        background-color: #514848a5;
-        border-radius: 10px; }
+      .container nav .menu .ulmenu .limenudrop .linkmenu {
+        font-weight: 600; }
+        .container nav .menu .ulmenu .limenudrop .linkmenu:hover {
+          transform: scale(1.1);
+          background-color: #514848a5;
+          border-radius: 10px; }
       .container nav .menu .ulmenu .limenudrop .ulmenudrop {
         background-color: #fc97925f; }
         .container nav .menu .ulmenu .limenudrop .ulmenudrop .linkmenudrop {
@@ -191,10 +193,12 @@ body {
           border-radius: 10px; }
         .contacto nav .menu .ulmenu .limenu .linkmenu:active {
           background-color: #d110105c; }
-      .contacto nav .menu .ulmenu .limenudrop .linkmenu:hover {
-        transform: scale(1.1);
-        background-color: #514848a5;
-        border-radius: 10px; }
+      .contacto nav .menu .ulmenu .limenudrop .linkmenu {
+        font-weight: 600; }
+        .contacto nav .menu .ulmenu .limenudrop .linkmenu:hover {
+          transform: scale(1.1);
+          background-color: #514848a5;
+          border-radius: 10px; }
       .contacto nav .menu .ulmenu .limenudrop .ulmenudrop {
         background-color: #fc97925f; }
         .contacto nav .menu .ulmenu .limenudrop .ulmenudrop .linkmenudrop {
@@ -220,6 +224,8 @@ body {
         margin: 20px; }
         .contacto .main-contacto .formulario .formulario-contenido input {
           margin: 5px; }
+      .contacto .main-contacto .formulario .botones .botonsubmit {
+        font-size: 600; }
   .contacto .aside-contacto {
     grid-area: aside;
     background-color: none;
