@@ -1,0 +1,165 @@
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: .4fr 0.1fr 2fr 1fr .2fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "portada portada"
+      "menu menu"
+      "carrusel carrusel"
+      "main aside"
+      "footer footer";
+    .portada{ 
+        grid-area: portada; 
+        background-color:$colorpartes;
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 20px;
+        font-family: 'Fjalla One', sans-serif;
+        .logonombre{
+            display: flex;
+            .sticker{
+                margin: 10px;
+                float: left;
+                border-radius: 10px;
+                width: 120px;
+                height: 120px;
+            }
+            h1{
+                margin-left: 50px;
+                margin-top: 50px;
+                padding-top: 20px;
+                text-align: left;
+            }
+        }
+        .subtitulo{
+            h4{
+                text-align: right;
+                margin: 30px;
+            }  
+        }   
+    }
+    nav{ 
+        grid-area: menu; 
+        background-color:$colorpartes;
+        text-decoration: none;
+        width: 100%;
+        padding: 0.1rem ;
+        margin: 0 auto;
+        display: flex;
+        justify-content: right;
+        border-radius:20px;
+        font-weight: 600;
+        .menu{
+            .ulmenu{
+                font-weight: 600;
+                .limenu{
+                    .linkmenu{
+                        color: $colortexto;
+                        font-weight: 600;
+                        &:hover{
+                            transform: scale(1.1);
+                            background-color: $colorhover;
+                            border-radius: 10px;
+                        }
+                        &:active{
+                            background-color: $coloractive;
+                        }
+                    }
+                }
+                .limenudrop{
+                    .linkmenu{
+                        font-weight: 600;
+                        &:hover{
+                            transform: scale(1.1);
+                            background-color: $colorhover;
+                            border-radius: 10px;
+                        }
+                    }
+                    .ulmenudrop{
+                        background-color: $colorpartes;
+                        .linkmenudrop{
+                            color: $colortexto;
+                            font-weight: 600;
+                        }
+                        &:hover{
+                            background-color: $colorhover;
+                        }
+                        &:active{
+                            background-color: $coloractive;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .carrusel{ 
+        grid-area: carrusel; 
+        width: 800px;
+        margin: auto;
+        padding: auto;
+        margin-top: 60px;
+        justify-content: center;
+        .carousel-inner{
+            border-radius: 20px;
+        }
+    }
+    .main{ 
+        grid-area: main; 
+        margin: auto;
+        padding: auto;
+        line-height: 2;
+        font-weight: 600;
+    }
+    .aside{ 
+        grid-area: aside;
+        background-color: none;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-weight: 600;
+        .lista-sitios{
+            border-style: inset;
+            border-color:  #fc97925f;
+            border-radius: 20px;
+            margin: 0 auto;
+            .lista-titulo{
+                font-weight: bold;
+                margin: 10px;
+            }
+            .enlaces-sitios{
+                list-style-type: circle;
+                .sitios-item{
+                    text-decoration: none;
+                    color: $colortexto;
+                    &:hover{
+                        background-color: $colorhover;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{ 
+        grid-area: footer; 
+        margin: 0 auto;
+        width: 100%;
+        background-color: $colorpartes;
+        border-radius: 20px;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        .textofooter{
+            color: #0b0a0ad8;
+            font-weight: bold;
+            justify-items: start;
+            margin-top: 20px;
+        }
+        .redessociales{
+            padding: 20px;
+        }
+    }
+}
