@@ -9,7 +9,7 @@
       "menu menu"
       "main aside"
       "footer footer";
-    width: 90% center;
+    margin: 30px;
     .portada{ 
         grid-area: portada; 
         background-color:#fc97925f;
@@ -96,7 +96,8 @@
     }
     .main-contacto{
         grid-area: main;
-        margin-top: 60px;
+        margin-left: 20px;
+        margin-top: 40px;
         font-weight: 600;
         .contacto-title{
             margin-top: 30px;
